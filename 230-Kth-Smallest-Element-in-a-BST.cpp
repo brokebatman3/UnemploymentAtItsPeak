@@ -11,16 +11,13 @@
  */
 class Solution {
 public:
-    void func(TreeNode *root , int k , priority_queue<int>&q){
+    void func(TreeNode *root , int k , vector<int>&q){
         if(!root){
             return ; 
         }
         func(root->left , k , q); 
+        q.push_back(root->val); 
         func(root->right , k , q); 
-        q.push(root->val); 
-        if(q.size() > k ){
-            q.pop(); 
-        }
         return ; 
 
 
@@ -28,8 +25,9 @@ public:
 
     }
     int kthSmallest(TreeNode* root, int k) {
-        priority_queue <int> q;
+        vector <int> q;
         func(root , k , q); 
-        return q.top(); 
+      
+       return  q[k-1];
     }
 };
