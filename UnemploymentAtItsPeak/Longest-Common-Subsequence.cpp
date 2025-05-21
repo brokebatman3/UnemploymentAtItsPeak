@@ -1,34 +1,20 @@
 class Solution {
 public:
-    int dp[1001][1001]; 
-    int func(string &s1 , string &s2 , int i ,int j ){
-        if(i == s1.size()){
-            return 0; 
-        }
-        if(j == s2.size()){
+    int dp[1001][1001];
+    int func(string &x, string &y, int i, int j) {
+        if (i < 0 || j < 0) {
             return 0;
         }
         if(dp[i][j] != -1){
             return dp[i][j]; 
         }
-        if(s1[i] == s2[j]){
-            return dp[i][j] =  1 + func(s1 , s2 , i + 1 , j + 1); 
+        if (x[i] == y[j]) {
+            return dp[i][j] =  1 + func(x, y, i - 1, j - 1);
         }
-        else{
-            return dp[i][j] =  max(func(s1 , s2 , i + 1 , j ) , max(func(s1 , s2 , i  , j+1 ) , func(s1 , s2 , i + 1 , j + 1))); 
-        }
+        return dp[i][j] =  max(func(x, y, i - 1, j) , func(x , y , i , j - 1));
     }
-    int longestCommonSubsequence(string s1, string s2) {
-        memset(dp , -1 , sizeof(dp)); 
-        // sort(s1.begin() , s1.end());
-        // sort(s2.begin() , s2.end());
-        if(s1.size() > s2.size()){
-
-         return func(s1 , s2 , 0 , 0 ); 
-        }
-        else
-        {
-            return func(s2 , s1 , 0 , 0);
-        }
+    int longestCommonSubsequence(string x, string y) {
+        memset(dp , -1 , sizeof(dp));
+        return func(x , y , x.length() -1 , y.length()-1);
     }
 };
