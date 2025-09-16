@@ -14,7 +14,7 @@ public:
             int mid = l + (h - l) / 2;
             cout << mid << " ";
             if (target == nums[mid]) {
-                return mid;
+                return 1;
             }
             if (nums[l] == nums[mid] && nums[mid] == nums[h]) {
                 l++;
