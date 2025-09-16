@@ -19,4 +19,16 @@ Created with :heart: by [LeetPush](https://github.com/husamahmud/LeetPush)
 |  |
 | ------- |
 | [0125-valid-palindrome](https://github.com/brokebatman3/UnemploymentAtItsPeak/tree/master/0125-valid-palindrome) |
+## Array
+|  |
+| ------- |
+| [0074-search-a-2d-matrix](https://github.com/brokebatman3/UnemploymentAtItsPeak/tree/master/0074-search-a-2d-matrix) |
+## Binary Search
+|  |
+| ------- |
+| [0074-search-a-2d-matrix](https://github.com/brokebatman3/UnemploymentAtItsPeak/tree/master/0074-search-a-2d-matrix) |
+## Matrix
+|  |
+| ------- |
+| [0074-search-a-2d-matrix](https://github.com/brokebatman3/UnemploymentAtItsPeak/tree/master/0074-search-a-2d-matrix) |
 <!---LeetCode Topics End-->
