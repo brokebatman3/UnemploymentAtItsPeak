@@ -26,6 +26,7 @@ Created with :heart: by [LeetPush](https://github.com/husamahmud/LeetPush)
 | [0074-search-a-2d-matrix](https://github.com/brokebatman3/UnemploymentAtItsPeak/tree/master/0074-search-a-2d-matrix) |
 | [0081-search-in-rotated-sorted-array-ii](https://github.com/brokebatman3/UnemploymentAtItsPeak/tree/master/0081-search-in-rotated-sorted-array-ii) |
 | [0167-two-sum-ii-input-array-is-sorted](https://github.com/brokebatman3/UnemploymentAtItsPeak/tree/master/0167-two-sum-ii-input-array-is-sorted) |
+| [0275-h-index-ii](https://github.com/brokebatman3/UnemploymentAtItsPeak/tree/master/0275-h-index-ii) |
 ## Binary Search
 |  |
 | ------- |
@@ -33,6 +34,7 @@ Created with :heart: by [LeetPush](https://github.com/husamahmud/LeetPush)
 | [0081-search-in-rotated-sorted-array-ii](https://github.com/brokebatman3/UnemploymentAtItsPeak/tree/master/0081-search-in-rotated-sorted-array-ii) |
 | [0167-two-sum-ii-input-array-is-sorted](https://github.com/brokebatman3/UnemploymentAtItsPeak/tree/master/0167-two-sum-ii-input-array-is-sorted) |
 | [0222-count-complete-tree-nodes](https://github.com/brokebatman3/UnemploymentAtItsPeak/tree/master/0222-count-complete-tree-nodes) |
+| [0275-h-index-ii](https://github.com/brokebatman3/UnemploymentAtItsPeak/tree/master/0275-h-index-ii) |
 ## Matrix
 |  |
 | ------- |
