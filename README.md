@@ -55,4 +55,20 @@ Created with :heart: by [LeetPush](https://github.com/husamahmud/LeetPush)
 |  |
 | ------- |
 | [0222-count-complete-tree-nodes](https://github.com/brokebatman3/UnemploymentAtItsPeak/tree/master/0222-count-complete-tree-nodes) |
+## Linked List
+|  |
+| ------- |
+| [0023-merge-k-sorted-lists](https://github.com/brokebatman3/UnemploymentAtItsPeak/tree/master/0023-merge-k-sorted-lists) |
+## Divide and Conquer
+|  |
+| ------- |
+| [0023-merge-k-sorted-lists](https://github.com/brokebatman3/UnemploymentAtItsPeak/tree/master/0023-merge-k-sorted-lists) |
+## Heap (Priority Queue)
+|  |
+| ------- |
+| [0023-merge-k-sorted-lists](https://github.com/brokebatman3/UnemploymentAtItsPeak/tree/master/0023-merge-k-sorted-lists) |
+## Merge Sort
+|  |
+| ------- |
+| [0023-merge-k-sorted-lists](https://github.com/brokebatman3/UnemploymentAtItsPeak/tree/master/0023-merge-k-sorted-lists) |
 <!---LeetCode Topics End-->
