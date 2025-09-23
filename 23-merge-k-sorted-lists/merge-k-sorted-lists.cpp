@@ -10,42 +10,39 @@
  */
 class Solution {
 public:
-     ListNode* insertionSortList(ListNode* head) {
-        ListNode* dummy = new ListNode(0);
-        dummy -> next = head;
-        ListNode *pre = dummy, *cur = head;
-        while (cur) {
-            if ((cur -> next) && (cur -> next -> val < cur -> val)) {
-                while ((pre -> next) && (pre -> next -> val < cur -> next -> val)) {
-                    pre = pre -> next;
-                }
-                ListNode* temp = pre -> next;
-                pre -> next = cur -> next;
-                cur -> next = cur -> next -> next;
-                pre -> next -> next = temp;
-                pre = dummy;
+    ListNode*merge(ListNode *l1 , ListNode *l2){
+        ListNode *res = new ListNode(0); 
+        ListNode *curr = res; 
+        while(l1 && l2){
+            if(l1->val < l2->val ){
+                curr->next = l1 ;
+                l1 = l1->next;  
             }
-            else {
-                cur = cur -> next;
+            else{
+                curr->next = l2 ;
+                l2 = l2->next;  
             }
+            curr = curr ->next; 
         }
-        return dummy -> next;
+        curr->next = l1 ? l1 : l2;
+        return res ->next;
     }
-    ListNode *func(vector<ListNode*>&x ){
-        ListNode *res = new ListNode(INT_MIN); 
-        ListNode *curr = res ; 
-        for(int i = 0 ; i < x.size() ; i++){
-            ListNode *head = x[i];
-            while(head){
-                ListNode *t = new ListNode(head->val); 
-                curr ->next = t ; 
-                curr = curr->next; 
-                head = head ->next; 
-            } 
+    ListNode* func(vector<ListNode*> x , int start , int end){
+        if(start == end ){
+            return x[start];
         }
-        return res ; 
+        if(start + 1  == end){
+            return merge(x[start] , x[end]); 
+        }
+        int mid = start + (end-start)/2;
+        ListNode *left = func(x , start , mid); 
+        ListNode *right = func(x , mid +1 , end); 
+        return merge(left , right); 
     }
     ListNode* mergeKLists(vector<ListNode*>& lists) {
-        return insertionSortList(func(lists))->next ; 
+        if(lists.size() == 0 ){
+            return 0 ; 
+        }
+        return func(lists , 0 , lists.size()-1); 
     }
 };
