@@ -24,6 +24,7 @@ Created with :heart: by [LeetPush](https://github.com/husamahmud/LeetPush)
 ## Array
 |  |
 | ------- |
+| [0041-first-missing-positive](https://github.com/brokebatman3/UnemploymentAtItsPeak/tree/master/0041-first-missing-positive) |
 | [0074-search-a-2d-matrix](https://github.com/brokebatman3/UnemploymentAtItsPeak/tree/master/0074-search-a-2d-matrix) |
 | [0081-search-in-rotated-sorted-array-ii](https://github.com/brokebatman3/UnemploymentAtItsPeak/tree/master/0081-search-in-rotated-sorted-array-ii) |
 | [0167-two-sum-ii-input-array-is-sorted](https://github.com/brokebatman3/UnemploymentAtItsPeak/tree/master/0167-two-sum-ii-input-array-is-sorted) |
@@ -71,4 +72,8 @@ Created with :heart: by [LeetPush](https://github.com/husamahmud/LeetPush)
 |  |
 | ------- |
 | [0023-merge-k-sorted-lists](https://github.com/brokebatman3/UnemploymentAtItsPeak/tree/master/0023-merge-k-sorted-lists) |
+## Hash Table
+|  |
+| ------- |
+| [0041-first-missing-positive](https://github.com/brokebatman3/UnemploymentAtItsPeak/tree/master/0041-first-missing-positive) |
 <!---LeetCode Topics End-->
