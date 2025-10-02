@@ -1,16 +1,24 @@
 class Solution {
 public:
     int firstMissingPositive(vector<int>& nums) {
-        int maxi = *max_element(nums.begin() , nums.end()); 
-        if(maxi <= 0 ){
-            return 1; 
-        }
-        sort(nums.begin() , nums.end());
-        for(int i = 1; i < maxi ; i++ ){
-            if(!binary_search(nums.begin() , nums.end() , i )){
-                return i ; 
+        int n = nums.size(); 
+        int range_l = 1 ; 
+        int range_h = nums.size() ;
+       for(int i = 0 ; i < n ; i++){
+            while((nums[i] >= range_l && nums[i] <= range_h) && nums[i] != nums[nums[i]-1] ){
+                swap(nums[i] , nums[nums[i] -1]); 
             }
-        }
-        return maxi + 1; 
+       }
+        
+    //    for(auto x : nums){
+    //     cout<<x <<" "; 
+    //    }
+       for(int i = 0 ; i < nums.size() ; i++){
+            if(nums[i] != i + 1){
+                return i + 1; 
+            }
+        
+       }
+       return n + 1;
     }
 };
